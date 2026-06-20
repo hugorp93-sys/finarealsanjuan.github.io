@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suite Sencilla</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#f5f5f5}
+header{position:fixed;top:0;width:100%;background:#0f4b3dee;color:#fff;display:flex;justify-content:space-between;padding:15px 5%;z-index:1000}
+header a{color:white;text-decoration:none;margin-left:20px}
+.space{height:70px}
+.container{max-width:1200px;margin:auto;padding:20px}
+.main{width:100%;height:500px;object-fit:cover;border-radius:15px}
+.thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:12px}
+.thumbs img{width:100%;height:130px;object-fit:cover;border-radius:10px;cursor:pointer}
+.content{background:#fff;padding:25px;border-radius:15px;margin-top:20px}
+h1,h2{color:#0f4b3d}
+p{line-height:1.8}
+.btn{background:#25D366;color:#fff;padding:14px 28px;text-decoration:none;border-radius:30px;font-weight:bold;display:inline-block;margin-top:15px}
+@media(max-width:768px){header{flex-direction:column;align-items:center} .main{height:300px} .thumbs{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<header>
+<div><strong>Real San Juan</strong></div>
+<nav>
+<a href="Hotel_Real_San_Juan_V2_Clickable.html#inicio">Inicio</a>
+<a href="Hotel_Real_San_Juan_V2_Clickable.html#habitaciones">Habitaciones</a>
+<a href="Hotel_Real_San_Juan_V2_Clickable.html#mapa">Mapa</a>
+<a href="Hotel_Real_San_Juan_V2_Clickable.html#contacto">Contacto</a>
+</nav>
+</header>
+<div class="space"></div>
+<div class="container">
+<img id="principal" class="main" src="imagenes/habitacion-sencilla.jpg">
+<div class="thumbs">
+<img src="imagenes/habitacion-sencilla.jpg" onclick="cambiar(this.src)">
+<img src="imagenes/habitacion-sencilla-2.jpg" onclick="cambiar(this.src)">
+<img src="imagenes/habitacion-sencilla-3.jpg" onclick="cambiar(this.src)">
+<img src="imagenes/habitacion-sencilla-4.jpg" onclick="cambiar(this.src)">
+</div>
+<div class="content">
+<h1>Suite Sencilla</h1>
+
+<p>Disfruta de una estancia cómoda y relajante en nuestra Suite Sencilla, un espacio diseñado para brindarte descanso, privacidad y comodidad durante tu visita a Zempoala. Su ambiente acogedor y funcional la convierte en la opción ideal para viajeros individuales o parejas que buscan una experiencia agradable en un entorno tranquilo.</p>
+<h2>Características</h2>
+<ul>
+<li>Capacidad para 1 o 2 huéspedes</li>
+<li>Cama king Size</li>
+<li>Televisión</li>
+<li>WiFi gratuito</li>
+<li>Baño privado</li>
+<li>Ambiente cómodo y acogedor</li>
+</ul>
+<p><strong>Desde $700 MXN por noche.</strong></p>
+
+<a class="btn" href="https://wa.me/527712631675" target="_blank"> Reservar ahora</a>
+</div>
+</div>
+<script>function cambiar(s){document.getElementById('principal').src=s;}</script>
+</body></html>
